@@ -38,16 +38,21 @@ Another elegant solution
 : Thre result is:  233168
 * Problem 2 - Even Fibonacci numbers
 #+begin_src python :results output :exports both
-  # 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, ...
-  def fib(x):
-      i, result = 0, 0
-      for i, j in range(10):
-  
-  print(fib(10))
+  is_even = lambda x: x % 2 == 0
+  def fib(limit):
+      ans = 1 
+      lst = []
+      x, y = 0, 1
+      while x <= limit:
+          lst.append(ans)
+          ans += y
+          x, y = y, x + y
+      return lst
+  print("The result is: ", sum([x for x in fib(4000000) if is_even(x)]))
 #+end_src
 
 #+RESULTS:
-: 45
+: The result is:  4613732
 
 * Resources
 - [[https://www.w3schools.com/python/default.asp][Python Tutorial]]
