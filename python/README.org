@@ -1,15 +1,6 @@
 #+PROPERTY: header-args :results output :exports both
 #+PROPERTY: header-args :shebang #!/bin/env python
 
-* Who is Euler any way ?
-``Read Euler, read Euler, he is the master of us all''. 
-
-This was a quote from Pierre-Simon Laplace regarding Leonhard Euler, one of the best mathematicians of the 18th century and throughout history as well.
-
-#+html: <p align="center">
-#+html: <img src="./img/Leonhard_Euler.jpg" alt="Leonhard Euler" width="250" align="center">
-#+html: </p>
-
 * Problem 1 - Multiples of 3 or 5
 #+begin_src python :tangle p001.py 
   def is_mul3(x):
@@ -53,6 +44,3 @@ Another elegant solution
 
 #+RESULTS:
 : The result is:  4613732
-
-* Resources
-- [[https://www.w3schools.com/python/default.asp][Python Tutorial]]
