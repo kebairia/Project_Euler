@@ -10,44 +10,5 @@ This was a quote from Pierre-Simon Laplace regarding Leonhard Euler, one of the 
 #+html: <img src="./img/Leonhard_Euler.jpg" alt="Leonhard Euler" width="250" align="center">
 #+html: </p>
 
-* Problem 1 - Multiples of 3 or 5
-#+begin_src python :tangle p001.py 
-  def is_mul3(x):
-      return x%3 == 0
-  
-  def is_mul5(x):
-      return x%5 == 0
-  sum = 0
-  for i in range(1, 1000):
-      if is_mul3(i) or is_mul5(i):
-          sum += i
-  print("The result is: ", sum)
-#+end_src
-
-#+RESULTS:
-: The result is:  233168
-
-Another elegant solution
-#+begin_src python :tangle p002.py
-  is_mul3 = lambda x: x%3 == 0
-  is_mul5 = lambda x: x%5 == 0
-  print("Thre result is: ", sum([x for x in range(1,1000) if is_mul3(x) or is_mul5(x)]))
-#+end_src
-
-#+RESULTS:
-: Thre result is:  233168
-* Problem 2 - Even Fibonacci numbers
-#+begin_src python :results output :exports both
-  # 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, ...
-  def fib(x):
-      i, result = 0, 0
-      for i, j in range(10):
-  
-  print(fib(10))
-#+end_src
-
-#+RESULTS:
-: 45
-
 * Resources
 - [[https://www.w3schools.com/python/default.asp][Python Tutorial]]
