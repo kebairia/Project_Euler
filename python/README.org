@@ -112,4 +112,6 @@ Another elegant solution
 #+end_src
 
 #+RESULTS: problem3
+: Test result:  [2, 3, 5, 3]
+: time for test is:  0.0002269744873046875
 
