@@ -1,4 +1,13 @@
+* Who is Euler any way ?
+Leonhard Euler (/ˈɔɪlər/ OY-lər;[2] German: [ˈɔʏlɐ] (About this soundlisten);[a] 15 April 1707 – 18 September 1783) was a Swiss mathematician, physicist, astronomer, geographer, logician and engineer who founded the studies of graph theory and topology and made pioneering and influential discoveries in many other branches of mathematics such as analytic number theory, complex analysis, and infinitesimal calculus. He introduced much of modern mathematical terminology and notation, including the notion of a mathematical function.[3] He is also known for his work in mechanics, fluid dynamics, optics, astronomy and music theory.
 
+#+html: <p align="center">
+#+html: <img src="./img/Leonhard_Euler.jpg" alt="Leonhard Euler" width="250" align="center">
+#+html: </p>
+
+Euler is held to be one of the greatest mathematicians in history and the greatest of the 18th century. A statement attributed to Pierre-Simon Laplace expresses Euler's influence on mathematics: "Read Euler, read Euler, he is the master of us all."[4][5] Carl Friedrich Gauss remarked: "The study of Euler's works will remain the best school for the different fields of mathematics, and nothing else can replace it."[6] Euler is also widely considered to be the most prolific; his more than 850 publications are collected in 92 quarto volumes,[7] (including his Opera Omnia) more than anyone else in the field.[8] He spent most of his adult life in Saint Petersburg, Russia, and in Berlin, then the capital of Prussia.
+
+Euler is credited for popularizing the Greek letter π (lowercase pi) to denote Archimedes' constant (the ratio of a circle's circumference to its diameter), as well as first employing the term f(x) to describe a function's y-axis, the letter i to express the imaginary unit √-1, and the Greek letter Σ (capital sigma) to express summations. He gave the current definition of the constant e, the base of the natural logarithm, still known as Euler's number.[9] Euler was also the first practitioner of graph theory (partly as a solution for the problem of the Seven Bridges of Königsberg). He became famous – among others – for solving the Basel Problem, after proving that the sum of the infinite series of squared integer reciprocals equaled exactly, π 2/6 and for discovering that the sum of the numbers of edges and faces minus vertices of a polyhedron equals 2, a number now commonly known as the Euler characteristic. In the field of physics, Euler reformulated Newton's laws of physics into new laws in his two-volume work Mechanica to explain the motion of rigid bodies more easily. He also made substantial contributions to the study of elastic deformations of solid objects.
 * Problem 1 - Multiples of 3 or 5
 #+begin_src python :results output :exports both
   def is_mul3(x):
@@ -24,17 +33,14 @@ Another elegant solution
 
 #+RESULTS:
 : Thre result is:  233168
-** Lists 
-- [[https://www.pythonforbeginners.com/basics/list-comprehensions-in-python][List Comprehensions in Python - PythonForBeginners.com]]
 * Problem 2 - Even Fibonacci numbers
 #+begin_src python :results output :exports both
-  def fibonacci(x):
+  # 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, ...
+  def fib(x):
       i, result = 0, 0
-      while i < x:
-          result = i + result
-          i += 1
-      return result
-  print(fibonacci(10))
+      for i, j in range(10):
+  
+  print(fib(10))
 #+end_src
 
 #+RESULTS:
