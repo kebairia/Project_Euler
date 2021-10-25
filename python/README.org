@@ -31,7 +31,7 @@ Another elegant solution
 
 * Problem 2 - Even Fibonacci numbers
 #+name: problem2
-#+begin_src python :results output :exports both
+#+begin_src python :tangle p002.py
   is_even = lambda x: x % 2 == 0
   def fib(limit):
       lst = []
